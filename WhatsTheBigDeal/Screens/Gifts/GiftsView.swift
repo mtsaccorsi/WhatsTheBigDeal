@@ -20,7 +20,7 @@ struct GiftsView: View {
                     ForEach(results, id: \.plain) { gift in
                         ZStack {
                             if gift.price_cut == 100 {
-                                DealsView(games: gift)
+                                DealsDetailView(games: gift)
                             } else {
                                 /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
                             }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SearchView: View {
+struct SearchBarView: View {
     @StateObject private var searchVM = SearchViewModel()
     @State private var isLoading = true
     
@@ -57,8 +57,8 @@ struct SearchView: View {
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
+struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchBarView()
     }
 }

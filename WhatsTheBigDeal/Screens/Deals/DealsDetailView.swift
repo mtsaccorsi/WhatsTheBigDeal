@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DealsView: View {
+struct DealsDetailView: View {
     
     let games: GameList
     
@@ -73,8 +73,8 @@ struct DealsView: View {
     }
 }
 
-struct DealsView_Previews: PreviewProvider {
+struct DealsDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DealsView(games: .init(plain: "residentevil", title: "Resident Evil", price_new: 24.99, price_old: 45.00, price_cut: 44, shop: .init(name: "Steam"), urls: .init(buy: "https://store.steampowered.com/app/1180660/")))
+        DealsDetailView(games: .init(plain: "residentevil", title: "Resident Evil", price_new: 24.99, price_old: 45.00, price_cut: 44, shop: .init(name: "Steam"), urls: .init(buy: "https://store.steampowered.com/app/1180660/")))
     }
 }

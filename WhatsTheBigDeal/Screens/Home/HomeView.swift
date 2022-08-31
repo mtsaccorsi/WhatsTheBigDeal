@@ -28,14 +28,14 @@ struct HomeView: View {
                 //                .cornerRadius(10)
                 //                .padding(.top)
 
-                SearchView()
+                SearchBarView()
                     .padding()
             }
             .background(Color.indigo.opacity(0.9))
             
             
             TabView () {
-                RecentsView()
+                DealsListView()
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Início")

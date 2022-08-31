@@ -13,6 +13,7 @@ class DealsViewModel: ObservableObject {
     
     @Published var games: [GameList] = []
     @Published var offset: Int = 0
+    @Published var isLoading = true
     
     func fetchDeals() async {
         

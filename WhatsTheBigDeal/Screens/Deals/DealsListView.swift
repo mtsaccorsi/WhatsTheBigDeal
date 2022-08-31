@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct RecentsView: View {
+struct DealsListView: View {
     
     @StateObject private var dealsVM = DealsViewModel()
-    @State private var isLoading = true
     
     var body: some View {
         
@@ -19,7 +18,7 @@ struct RecentsView: View {
             if let results = dealsVM.games {
                 
                 ForEach(results, id: \.plain) { deal in
-                    DealsView(games: deal)
+                    DealsDetailView(games: deal)
                 }
                 .listRowSeparator(.hidden)
                 .listRowInsets(EdgeInsets())
@@ -30,7 +29,7 @@ struct RecentsView: View {
                 if dealsVM.offset == dealsVM.games.count {
                     HStack {
                         Spacer()
-                        DealsLoadingView(isShowing: isLoading)
+                        DealsLoadingView(isShowing: dealsVM.isLoading)
                             .task { await dealsVM.fetchDeals()}
                         Spacer()
                     }
@@ -43,7 +42,7 @@ struct RecentsView: View {
                         
                         // Setting offset to current fetched deals count, increasing the list
                         if !dealsVM.games.isEmpty && minY < height {
-                            isLoading.toggle()
+                            dealsVM.isLoading.toggle()
                             DispatchQueue.main.async {
                                 dealsVM.offset = dealsVM.games.count
                             }
@@ -57,7 +56,7 @@ struct RecentsView: View {
             else {
                 HStack {
                     Spacer()
-                    DealsLoadingView(isShowing: isLoading)
+                    DealsLoadingView(isShowing: dealsVM.isLoading)
                     Spacer()
                 }
                 .listRowSeparator(.hidden)
@@ -66,14 +65,14 @@ struct RecentsView: View {
         // MARK: - LIST ENDED
         .listStyle(PlainListStyle())
         .refreshable {
-            isLoading.toggle()
+            dealsVM.isLoading.toggle()
             await dealsVM.refreshDeals()
         }
     }
 }
 
-struct RecentsView_Previews: PreviewProvider {
+struct DealsListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecentsView()
+        DealsListView()
     }
 }
