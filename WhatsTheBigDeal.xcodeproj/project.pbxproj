@@ -25,6 +25,7 @@
 		1AAEE5D228556431001D4F95 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D128556431001D4F95 /* SearchModel.swift */; };
 		1AAEE5D428557745001D4F95 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D328557745001D4F95 /* Credentials.swift */; };
 		1ADA0F4E285FBE7F00EF3DEF /* DealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */; };
+		1AEDA0B928C04722000B33E0 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0B828C04722000B33E0 /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		1AAEE5D128556431001D4F95 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		1AAEE5D328557745001D4F95 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsListView.swift; sourceTree = "<group>"; };
+		1AEDA0B828C04722000B33E0 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				1A40E8FE284EE17F002368DE /* HomeView.swift */,
+				1AEDA0B828C04722000B33E0 /* LogoView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				1AA9D4B5289612A200258621 /* GiftsView.swift in Sources */,
 				1A11E868284FC51800C136BA /* DealsDetailView.swift in Sources */,
 				1AAEE5D428557745001D4F95 /* Credentials.swift in Sources */,
+				1AEDA0B928C04722000B33E0 /* LogoView.swift in Sources */,
 				1AAEE5D228556431001D4F95 /* SearchModel.swift in Sources */,
 				1A11E864284FA7D500C136BA /* DealsModel.swift in Sources */,
 				1A40E8FF284EE17F002368DE /* HomeView.swift in Sources */,

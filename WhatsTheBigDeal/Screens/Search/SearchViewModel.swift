@@ -14,6 +14,7 @@ class SearchViewModel: ObservableObject {
     
     @Published var query = ""
     @Published var fetchedSearch: [SearchResults]? = nil
+    @Published var isLoading = true
     
     // used to cancel the search publisher when needed
     var queryCancellable: AnyCancellable? = nil

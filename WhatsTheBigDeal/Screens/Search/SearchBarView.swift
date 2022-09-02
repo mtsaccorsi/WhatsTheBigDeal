@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SearchBarView: View {
     @StateObject private var searchVM = SearchViewModel()
-    @State private var isLoading = true
     
     var body: some View {
 //        NavigationView() {

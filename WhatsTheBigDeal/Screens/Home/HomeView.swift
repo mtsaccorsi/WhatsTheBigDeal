@@ -12,24 +12,14 @@ struct HomeView: View {
     var body: some View{
         
         VStack {
-            VStack {
-                //                HStack {
-                //                    Text("  Alguma") // EsperaCair
-                //                        .font(.title)
-                //                        .fontWeight(.heavy)
-                //                        .foregroundColor(Color.white)
-                //                    Text("Promo  ")
-                //                        .font(.title)
-                //                        .fontWeight(.heavy)
-                //                        .foregroundColor(Color.black)
-                //                }
-                //                .padding(.horizontal)
-                ////                .background(.white)
-                //                .cornerRadius(10)
-                //                .padding(.top)
+            HStack {
+                LogoView()
 
-                SearchBarView()
-                    .padding()
+                Text("Alimentado pela API IsThereAnyDeal.com")
+                    .font(.caption2)
+                    .foregroundColor(.white.opacity(0.4))
+                    .multilineTextAlignment(.center)
+                    .padding(.trailing)
             }
             .background(Color.indigo.opacity(0.9))
             
@@ -56,6 +46,7 @@ struct HomeView: View {
                 UITabBar.appearance().unselectedItemTintColor = UIColor.lightText
                 // needed to load the same color as barTintColor when recreating the view
                 UITabBar.appearance().backgroundColor = .systemIndigo
+                
             }
         }
     }
@@ -64,6 +55,6 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            
+        
     }
 }

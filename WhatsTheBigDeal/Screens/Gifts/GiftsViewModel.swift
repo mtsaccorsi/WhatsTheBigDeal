@@ -11,6 +11,7 @@ class GiftsViewModel: ObservableObject {
     
     @Published var gifts: [GameList] = []
     @Published var giftsOffset: Int = 0
+    @Published var isLoading = true
     
     func fetchGifts() async {
         if let urlAPI = URL(string: "https://api.isthereanydeal.com/v01/deals/list/?key=\(apiKey)&limit=10&offset=\(giftsOffset)&region=br2&country=BR&sort=price%3Aasc") {

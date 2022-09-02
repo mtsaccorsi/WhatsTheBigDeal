@@ -9,7 +9,6 @@ import SwiftUI
 
 struct GiftsView: View {
     @StateObject private var giftsVM = GiftsViewModel()
-    @State private var isLoading = true
     
     var body: some View {
 
@@ -36,7 +35,7 @@ struct GiftsView: View {
                     if giftsVM.giftsOffset == giftsVM.gifts.count {
                         HStack {
                             Spacer()
-                            DealsLoadingView(isShowing: isLoading)
+                            DealsLoadingView(isShowing: giftsVM.isLoading)
                                 .task { await giftsVM.fetchGifts()
                                     
                                 }
@@ -50,7 +49,7 @@ struct GiftsView: View {
                             
                             // Setting offset to current fetched deals count, increasing the list
                             if !giftsVM.gifts.isEmpty && minY < height {
-                                isLoading = true
+                                giftsVM.isLoading = true
                                 DispatchQueue.main.async {
                                     giftsVM.giftsOffset = giftsVM.gifts.count
                                 }
@@ -64,7 +63,7 @@ struct GiftsView: View {
                 else {
                     HStack {
                         Spacer()
-                        DealsLoadingView(isShowing: isLoading)
+                        DealsLoadingView(isShowing: giftsVM.isLoading)
                         Spacer()
                     }
                     .listRowSeparator(.hidden)
@@ -73,7 +72,7 @@ struct GiftsView: View {
             // MARK: - LIST ENDED
             .listStyle(PlainListStyle())
             .refreshable {
-                isLoading = false
+                giftsVM.isLoading = false
                 await giftsVM.refreshGifts()
         }
     }
