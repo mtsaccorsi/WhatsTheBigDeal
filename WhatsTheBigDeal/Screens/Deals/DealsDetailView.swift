@@ -50,6 +50,7 @@ struct DealsDetailView: View {
                                 .background(Color.purple)
                                 .cornerRadius(10)
                                 .foregroundColor(Color.white)
+                                .shadow(color: .black, radius: 0.1)
                             Spacer()
                         }
                     }
