@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LogoView: View {
     var body: some View {
-        ZStack {
             HStack {
                 ZStack {
                     Text("Pro")
@@ -39,11 +38,10 @@ struct LogoView: View {
                     .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.white.opacity(0.7))
-                Spacer()
+                //Spacer()
             }
             .padding()
             .frame(maxWidth: .infinity)
-        }
     }
 }
 
