@@ -31,7 +31,7 @@ struct HomeView: View {
                         Text("Início")
                     }
                 
-                GiftsView()
+                GiftsListView()
                     .tabItem {
                         Image(systemName: "gift.fill")
                         Text("É grátis!")

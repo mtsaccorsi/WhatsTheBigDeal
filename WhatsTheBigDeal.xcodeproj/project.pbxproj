@@ -19,7 +19,7 @@
 		1A874873285FC59300D8BD26 /* DealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874872285FC59300D8BD26 /* DealsViewModel.swift */; };
 		1A874875285FC5E400D8BD26 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874874285FC5E400D8BD26 /* SearchBarView.swift */; };
 		1A874877285FC7C100D8BD26 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874876285FC7C100D8BD26 /* SearchViewModel.swift */; };
-		1AA9D4B5289612A200258621 /* GiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9D4B4289612A200258621 /* GiftsView.swift */; };
+		1AA9D4B5289612A200258621 /* GiftsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9D4B4289612A200258621 /* GiftsListView.swift */; };
 		1AA9D4B7289612F600258621 /* GiftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9D4B6289612F600258621 /* GiftsViewModel.swift */; };
 		1AA9FD9D2856BD0B00213B7E /* SearchLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9FD9C2856BD0B00213B7E /* SearchLoadingView.swift */; };
 		1AAEE5D228556431001D4F95 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D128556431001D4F95 /* SearchModel.swift */; };
@@ -32,7 +32,7 @@
 		1A11E863284FA7D500C136BA /* DealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsModel.swift; sourceTree = "<group>"; };
 		1A11E867284FC51800C136BA /* DealsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsDetailView.swift; sourceTree = "<group>"; };
 		1A1678792868D123008ECFDB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		1A40E8F9284EE17F002368DE /* WhatsTheBigDeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsTheBigDeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A40E8F9284EE17F002368DE /* Poor Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poor Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A40E8FC284EE17F002368DE /* WhatsTheBigDealApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsTheBigDealApp.swift; sourceTree = "<group>"; };
 		1A40E8FE284EE17F002368DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1A40E900284EE180002368DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		1A874872285FC59300D8BD26 /* DealsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsViewModel.swift; sourceTree = "<group>"; };
 		1A874874285FC5E400D8BD26 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		1A874876285FC7C100D8BD26 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		1AA9D4B4289612A200258621 /* GiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsView.swift; sourceTree = "<group>"; };
+		1AA9D4B4289612A200258621 /* GiftsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsListView.swift; sourceTree = "<group>"; };
 		1AA9D4B6289612F600258621 /* GiftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsViewModel.swift; sourceTree = "<group>"; };
 		1AA9FD9C2856BD0B00213B7E /* SearchLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoadingView.swift; sourceTree = "<group>"; };
 		1AAEE5D128556431001D4F95 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		1A40E8FA284EE17F002368DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A40E8F9284EE17F002368DE /* WhatsTheBigDeal.app */,
+				1A40E8F9284EE17F002368DE /* Poor Player.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 		1AEDA0B628C024BC000B33E0 /* Gifts */ = {
 			isa = PBXGroup;
 			children = (
-				1AA9D4B4289612A200258621 /* GiftsView.swift */,
+				1AA9D4B4289612A200258621 /* GiftsListView.swift */,
 				1AA9D4B6289612F600258621 /* GiftsViewModel.swift */,
 			);
 			path = Gifts;
@@ -179,7 +179,7 @@
 			packageProductDependencies = (
 			);
 			productName = WhatsTheBigDeal;
-			productReference = 1A40E8F9284EE17F002368DE /* WhatsTheBigDeal.app */;
+			productReference = 1A40E8F9284EE17F002368DE /* Poor Player.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 			files = (
 				1A16787A2868D123008ECFDB /* Colors.swift in Sources */,
 				1AA9D4B7289612F600258621 /* GiftsViewModel.swift in Sources */,
-				1AA9D4B5289612A200258621 /* GiftsView.swift in Sources */,
+				1AA9D4B5289612A200258621 /* GiftsListView.swift in Sources */,
 				1A11E868284FC51800C136BA /* DealsDetailView.swift in Sources */,
 				1AAEE5D428557745001D4F95 /* Credentials.swift in Sources */,
 				1AEDA0B928C04722000B33E0 /* LogoView.swift in Sources */,
@@ -395,7 +395,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtsaccorsi.WhatsTheBigDeal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Poor Player";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,7 +424,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtsaccorsi.WhatsTheBigDeal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Poor Player";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,10 +14,11 @@ struct DealsLoadingView: View {
     var body: some View {                    
         VStack {
             Spacer()
+            
             ProgressView("Carregando descontos...")
-//                .progressViewStyle(LinearProgressViewStyle())
-//                .padding()
-//                .foregroundColor(.white)
+                .tint(.indigo)
+                .foregroundColor(.indigo.opacity(0.7))
+
             Spacer()
         }
         .opacity(isShowing ? 1 : 0)

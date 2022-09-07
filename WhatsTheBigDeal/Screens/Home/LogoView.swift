@@ -38,7 +38,7 @@ struct LogoView: View {
                     .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.white.opacity(0.7))
-                //Spacer()
+                Spacer()
             }
             .padding()
             .frame(maxWidth: .infinity)

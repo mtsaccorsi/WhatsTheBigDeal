@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GiftsView: View {
+struct GiftsListView: View {
     @StateObject private var giftsVM = GiftsViewModel()
     
     var body: some View {
@@ -74,12 +74,14 @@ struct GiftsView: View {
             .refreshable {
                 giftsVM.isLoading = false
                 await giftsVM.refreshGifts()
+        }.onAppear {
+            UIRefreshControl.appearance().tintColor = UIColor.systemIndigo
         }
     }
 }
 
-struct GiftsView_Previews: PreviewProvider {
+struct GiftsListView_Previews: PreviewProvider {
     static var previews: some View {
-        GiftsView()
+        GiftsListView()
     }
 }

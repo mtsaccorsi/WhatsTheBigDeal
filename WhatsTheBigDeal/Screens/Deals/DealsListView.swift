@@ -67,6 +67,8 @@ struct DealsListView: View {
         .refreshable {
             dealsVM.isLoading.toggle()
             await dealsVM.refreshDeals()
+        }.onAppear {
+            UIRefreshControl.appearance().tintColor = UIColor.systemIndigo
         }
     }
 }
