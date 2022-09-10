@@ -25,6 +25,7 @@
 		1AAEE5D228556431001D4F95 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D128556431001D4F95 /* SearchModel.swift */; };
 		1AAEE5D428557745001D4F95 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D328557745001D4F95 /* Credentials.swift */; };
 		1ADA0F4E285FBE7F00EF3DEF /* DealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */; };
+		1AE4E80C28CC027E0059C666 /* HomeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4E80B28CC027E0059C666 /* HomeLoadingView.swift */; };
 		1AEDA0B928C04722000B33E0 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0B828C04722000B33E0 /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		1AAEE5D128556431001D4F95 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		1AAEE5D328557745001D4F95 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsListView.swift; sourceTree = "<group>"; };
+		1AE4E80B28CC027E0059C666 /* HomeLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLoadingView.swift; sourceTree = "<group>"; };
 		1AEDA0B828C04722000B33E0 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1A40E8FE284EE17F002368DE /* HomeView.swift */,
+				1AE4E80B28CC027E0059C666 /* HomeLoadingView.swift */,
 				1AEDA0B828C04722000B33E0 /* LogoView.swift */,
 			);
 			path = Home;
@@ -251,6 +254,7 @@
 				1A41D98628510856004DEC3E /* DealsLoadingView.swift in Sources */,
 				1A40E8FD284EE17F002368DE /* WhatsTheBigDealApp.swift in Sources */,
 				1AA9FD9D2856BD0B00213B7E /* SearchLoadingView.swift in Sources */,
+				1AE4E80C28CC027E0059C666 /* HomeLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

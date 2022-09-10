@@ -15,7 +15,6 @@ struct LogoView: View {
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.white.opacity(0.7))
-                    //                        .strikethrough(color: .black)
                     Image(systemName: "scribble")
                         .resizable()
                         .frame(width: 25, height: 25)
@@ -29,7 +28,6 @@ struct LogoView: View {
                 }
                 .padding(.vertical, 5)
                 .padding(.horizontal, 10)
-                //                    .background(Color.pink.opacity(1))
                 .background(LinearGradient(colors: [.black.opacity(0.2), .black.opacity(0.5)], startPoint: .leading, endPoint: .trailing))
                 .cornerRadius(10)
                 .rotationEffect(.degrees(8))
@@ -38,10 +36,9 @@ struct LogoView: View {
                     .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.white.opacity(0.7))
-                Spacer()
             }
             .padding()
-            .frame(maxWidth: .infinity)
+            .scaledToFill()
     }
 }
 
