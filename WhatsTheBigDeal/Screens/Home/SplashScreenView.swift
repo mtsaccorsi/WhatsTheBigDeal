@@ -19,7 +19,7 @@ struct SplashScreenView: View {
         .zIndex(1)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.indigo.opacity(1))
-        .animation(.easeInOut(duration: 3), value: true)
+        .animation(.easeInOut(duration: 1.5), value: true)
         .opacity(isShowing ? 1 : 0)
     }
 }

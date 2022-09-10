@@ -48,6 +48,11 @@ struct HomeView: View {
                             Text("É grátis!")
                         }
                     
+                    AboutView()
+                        .tabItem {
+                            Image(systemName: "info.circle.fill")
+                            Text("Info")
+                        }
                 }
                 .accentColor(Color.white)
                 .offset(y: -10)
@@ -59,11 +64,11 @@ struct HomeView: View {
                     UITabBar.appearance().isTranslucent = false // needed to be false to match the color
                 }
                 
-                Text("Desenvolvido por Matheus Accorsi | Alimentado pela API IsThereAnyDeal.com")
-                    .font(.system(size: 9))
-                    .foregroundColor(.white.opacity(0.4))
-                    .multilineTextAlignment(.center)
-                    .padding(.top, -5)
+                //                Text("Desenvolvido por Matheus Accorsi | Alimentado pela API IsThereAnyDeal.com")
+                //                    .font(.system(size: 9))
+                //                    .foregroundColor(.white.opacity(0.4))
+                //                    .multilineTextAlignment(.center)
+                //                    .padding(.top, -5)
             }
             .background(Color.indigo)
             .zIndex(0)
