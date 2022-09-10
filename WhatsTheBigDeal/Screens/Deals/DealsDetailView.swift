@@ -36,6 +36,7 @@ struct DealsDetailView: View {
                                 .background(Color.blue.opacity(0.9))
                                 .cornerRadius(10)
                                 .foregroundColor(Color.white)
+                                .shadow(color: .black, radius: 0.1)
                         }
                         
                         HStack {
@@ -66,7 +67,7 @@ struct DealsDetailView: View {
         }
         .padding(.vertical, 10)
         .padding(.horizontal, 10)
-        .background(LinearGradient(colors: [.indigo.opacity(0.9), .purple.opacity(0.8)], startPoint: .leading, endPoint: .trailing))
+        .background(LinearGradient(colors: [.indigo.opacity(0.9), .purple.opacity(0.8)], startPoint: .leading, endPoint: .trailing).opacity(1))
         .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
         .shadow(color: Color.black.opacity(0.09), radius: 5, x: 5, y: 5)
         .shadow(color: Color.black.opacity(0.09), radius: 5, x: -5, y: -5)

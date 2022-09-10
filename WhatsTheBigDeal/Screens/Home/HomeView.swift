@@ -26,14 +26,14 @@ struct HomeView: View {
                 HStack {
                     LogoView()
                     Spacer()
-                    Text("Alimentado pela API IsThereAnyDeal.com")
-                        .font(.caption2)
+                    Image(systemName: "magnifyingglass.circle.fill")
+                        .resizable()
+                        .frame(width: 35, height: 35, alignment: .center)
                         .foregroundColor(.white.opacity(0.4))
-                        .multilineTextAlignment(.center)
-                        .padding(.trailing)
+                        .padding()
                 }
                 .frame(maxWidth: .infinity)
-                .background(Color.indigo.opacity(0.9))
+                .background(Color.indigo)
                 
                 TabView () {
                     DealsListView()
@@ -51,15 +51,21 @@ struct HomeView: View {
                 }
                 .accentColor(Color.white)
                 .offset(y: -10)
-                .ignoresSafeArea()
                 .onAppear() {
-                    UITabBar.appearance().barTintColor = .systemIndigo
-                    UITabBar.appearance().unselectedItemTintColor = UIColor.lightText
-                    // needed to load the same color as barTintColor when recreating the view
                     UITabBar.appearance().backgroundColor = .systemIndigo
-                    
+                    UITabBar.appearance().unselectedItemTintColor = UIColor.lightText
+                    // needed to load the same color as backgroundColor when recreating the view
+                    UITabBar.appearance().barTintColor = .systemIndigo
+                    UITabBar.appearance().isTranslucent = false // needed to be false to match the color
                 }
+                
+                Text("Desenvolvido por Matheus Accorsi | Alimentado pela API IsThereAnyDeal.com")
+                    .font(.system(size: 9))
+                    .foregroundColor(.white.opacity(0.4))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, -5)
             }
+            .background(Color.indigo)
             .zIndex(0)
         }
     }
@@ -68,6 +74,7 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .previewInterfaceOrientation(.portrait)
         
     }
 }
