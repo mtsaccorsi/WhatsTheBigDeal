@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeLoadingView: View {
+struct SplashScreenView: View {
     
     var isShowing: Bool
     
@@ -24,8 +24,8 @@ struct HomeLoadingView: View {
     }
 }
 
-struct HomeLoadingView_Previews: PreviewProvider {
+struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeLoadingView(isShowing: true)
+        SplashScreenView(isShowing: true)
     }
 }

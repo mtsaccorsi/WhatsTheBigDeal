@@ -15,7 +15,7 @@ struct HomeView: View {
         
         ZStack {
             
-            HomeLoadingView(isShowing: isLoading)
+            SplashScreenView(isShowing: isLoading)
                 .zIndex(1)
                 .task {
                     try? await Task.sleep(nanoseconds: 3_000_000_000)
