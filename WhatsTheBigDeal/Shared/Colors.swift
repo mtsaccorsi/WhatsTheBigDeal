@@ -8,4 +8,4 @@
 import Foundation
 import SwiftUI
 
-let backgroundColor = LinearGradient(colors: [.gray, .brown], startPoint: .top, endPoint: .bottom)
+let gradientColor = LinearGradient(colors: [.indigo.opacity(0.9), .purple.opacity(0.8)], startPoint: .leading, endPoint: .trailing)
