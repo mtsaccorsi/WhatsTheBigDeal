@@ -11,8 +11,13 @@ struct AboutView: View {
     var body: some View {
         
         VStack {
-            Text("Desenvolvido por Matheus Accorsi" + "\n" + "| Alimentado pela API IsThereAnyDeal.com |")
+            Text("Desenvolvido por Matheus Accorsi")
+                .padding(.bottom, 5)
                 .font(.system(size: 18))
+                .foregroundColor(.white.opacity(0.4))
+                .multilineTextAlignment(.center)
+            Text("Alimentado pela API IsThereAnyDeal.com")
+                .font(.system(size: 14))
                 .foregroundColor(.white.opacity(0.4))
                 .multilineTextAlignment(.center)
 

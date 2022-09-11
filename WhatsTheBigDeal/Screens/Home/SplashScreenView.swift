@@ -14,7 +14,7 @@ struct SplashScreenView: View {
     var body: some View {
         
         VStack {
-            LogoView()
+            IconView()
         }
         .zIndex(1)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
