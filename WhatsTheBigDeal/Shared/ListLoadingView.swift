@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DealsLoadingView: View {
+struct ListLoadingView: View {
     
     var isShowing: Bool
     
@@ -22,11 +22,12 @@ struct DealsLoadingView: View {
             Spacer()
         }
         .opacity(isShowing ? 1 : 0)
+        .padding(.top, 12)
     }
 }
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        DealsLoadingView(isShowing: true)
+        ListLoadingView(isShowing: true)
     }
 }

@@ -11,8 +11,9 @@ struct GiftsListView: View {
     @StateObject private var giftsVM = GiftsViewModel()
     
     var body: some View {
-
-            List {
+        
+        ScrollView {
+            LazyVStack {
                 // MARK: - DEALS LIST
                 if let results = giftsVM.gifts {
                     
@@ -26,22 +27,18 @@ struct GiftsListView: View {
                         }
                         
                     }
-                    .listRowSeparator(.hidden)
-                    .listRowInsets(EdgeInsets())
-                    .padding(.horizontal, 9)
-                    .padding(.top, 10)
+                    .padding(.horizontal, 10)
+                    .padding(.top, 12)
+                    .padding(.bottom, -8)
                     
                     // Infinity Scroll setting a Geometry Reader
                     if giftsVM.giftsOffset == giftsVM.gifts.count {
                         HStack {
                             Spacer()
-                            DealsLoadingView(isShowing: giftsVM.isLoading)
-                                .task { await giftsVM.fetchGifts()
-                                    
-                                }
+                            ListLoadingView(isShowing: giftsVM.isLoading)
+                                .task { await giftsVM.fetchGifts()}
                             Spacer()
                         }
-                        .listRowSeparator(.hidden)
                     } else {
                         GeometryReader { reader -> Color in
                             let minY = reader.frame(in: .global).minY
@@ -56,25 +53,26 @@ struct GiftsListView: View {
                             }
                             return Color.clear
                         }
-                        .listRowSeparator(.hidden)
                     }
                     
                 }
                 else {
                     HStack {
                         Spacer()
-                        DealsLoadingView(isShowing: giftsVM.isLoading)
+                        ListLoadingView(isShowing: giftsVM.isLoading)
                         Spacer()
                     }
-                    .listRowSeparator(.hidden)
                 }
             }
             // MARK: - LIST ENDED
-            .listStyle(PlainListStyle())
-            .refreshable {
-                giftsVM.isLoading = false
-                await giftsVM.refreshGifts()
-        }.onAppear {
+        }
+        .refreshable {
+            giftsVM.isLoading = true
+            giftsVM.gifts = []
+            giftsVM.giftsOffset = 0
+            await giftsVM.fetchGifts()
+        }
+        .onAppear {
             UIRefreshControl.appearance().tintColor = UIColor.systemIndigo
         }
     }

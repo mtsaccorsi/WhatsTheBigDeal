@@ -13,61 +13,61 @@ struct DealsListView: View {
     
     var body: some View {
         
-        List {
-            // MARK: - DEALS LIST
-            if let results = dealsVM.games {
-                
-                ForEach(results, id: \.plain) { deal in
-                    DealsDetailView(games: deal)
+        ScrollView {
+            LazyVStack {
+                // MARK: - DEALS LIST
+                if let results = dealsVM.games {
+                    
+                    ForEach(results, id: \.plain) { deal in
+                        DealsDetailView(games: deal)
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.top, 12)
+                    .padding(.bottom, -8)
+                    
+                    // Infinity Scroll setting a Geometry Reader
+                    if dealsVM.dealsOffset == dealsVM.games.count {
+                        HStack {
+                            Spacer()
+                            ListLoadingView(isShowing: dealsVM.isLoading)
+                                .task { await dealsVM.fetchDeals()}
+                            Spacer()
+                        }
+                        
+                    } else {
+                        GeometryReader { reader -> Color in
+                            let minY = reader.frame(in: .global).minY
+                            let height = UIScreen.main.bounds.height / 1.3
+                            
+                            // Setting offset to current fetched deals count, increasing the list
+                            if !dealsVM.games.isEmpty && minY < height {
+                                dealsVM.isLoading.toggle()
+                                DispatchQueue.main.async {
+                                    dealsVM.dealsOffset = dealsVM.games.count
+                                }
+                            }
+                            return Color.clear
+                        }
+                    }
                 }
-                .listRowSeparator(.hidden)
-                .listRowInsets(EdgeInsets())
-                .padding(.horizontal, 9)
-                .padding(.top, 10)
-                
-                // Infinity Scroll setting a Geometry Reader
-                if dealsVM.offset == dealsVM.games.count {
+                else {
                     HStack {
                         Spacer()
-                        DealsLoadingView(isShowing: dealsVM.isLoading)
-                            .task { await dealsVM.fetchDeals()}
+                        ListLoadingView(isShowing: dealsVM.isLoading)
                         Spacer()
                     }
-                    .listRowSeparator(.hidden)                    
-                    
-                } else {
-                    GeometryReader { reader -> Color in
-                        let minY = reader.frame(in: .global).minY
-                        let height = UIScreen.main.bounds.height / 1.3
-                        
-                        // Setting offset to current fetched deals count, increasing the list
-                        if !dealsVM.games.isEmpty && minY < height {
-                            dealsVM.isLoading.toggle()
-                            DispatchQueue.main.async {
-                                dealsVM.offset = dealsVM.games.count
-                            }
-                        }
-                        return Color.clear
-                    }
-                    .listRowSeparator(.hidden)
                 }
-                
             }
-            else {
-                HStack {
-                    Spacer()
-                    DealsLoadingView(isShowing: dealsVM.isLoading)
-                    Spacer()
-                }
-                .listRowSeparator(.hidden)
-            }
+            // MARK: - LIST ENDED
         }
-        // MARK: - LIST ENDED
-        .listStyle(PlainListStyle())
         .refreshable {
-            dealsVM.isLoading.toggle()
-            await dealsVM.refreshDeals()
-        }.onAppear {
+            dealsVM.isLoading = true
+            dealsVM.dealsOffset = 0
+            dealsVM.games = []
+            await dealsVM.fetchDeals()
+            try? await Task.sleep(nanoseconds: 2_000_000_000)
+        }
+        .onAppear {
             UIRefreshControl.appearance().tintColor = UIColor.systemIndigo
         }
     }
