@@ -28,8 +28,18 @@ final class Poor_PlayerUITests: XCTestCase {
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.       
-        XCUIApplication().tabBars["Tab Bar"].buttons["É grátis!"].tap()
-                                
+        
+        let tabBar = app.tabBars["Tab Bar"]
+        let grTisButton = tabBar.buttons["É grátis!"]
+        grTisButton.tap()
+        
+        let scrollViewsQuery = app.scrollViews
+        let element2 = scrollViewsQuery.children(matching: .other).element(boundBy: 0)
+        let element = element2.children(matching: .other).element
+        element.swipeDown()
+        tabBar.buttons["Início"].tap()
+        element.children(matching: .button).matching(identifier: "Add To Home Screen").element(boundBy: 0).tap()
+                                               
         
     }
 

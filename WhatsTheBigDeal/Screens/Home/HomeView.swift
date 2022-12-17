@@ -52,10 +52,10 @@ struct HomeView: View {
                         .tabItem {
                             Image(systemName: "info.circle.fill")
                             Text("Info")
-                        }
+                        }.padding(40)
                 }
                 .accentColor(Color.white)
-                .offset(y: -10)
+                //.offset(y: -10)
                 .onAppear() {
                     UITabBar.appearance().backgroundColor = .systemIndigo
                     UITabBar.appearance().unselectedItemTintColor = UIColor.lightText
