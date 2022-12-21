@@ -15,25 +15,27 @@ struct HomeView: View {
         
         ZStack {
             
-            SplashScreenView(isShowing: isLoading)
-                .zIndex(1)
-                .task {
-                    try? await Task.sleep(nanoseconds: 3_000_000_000)
-                    isLoading.toggle()
-                }
+//            SplashScreenView(isShowing: isLoading)
+//                .zIndex(1)
+//                .task {
+//                    try? await Task.sleep(nanoseconds: 3_000_000_000)
+//                    isLoading.toggle()
+//                }
             
             VStack {
                 HStack {
                     LogoView()
-                    Spacer()
-                    Image(systemName: "magnifyingglass.circle.fill")
-                        .resizable()
-                        .frame(width: 35, height: 35, alignment: .center)
-                        .foregroundColor(.white.opacity(0.4))
                         .padding()
+                    Spacer()
+//                    Image(systemName: "magnifyingglass.circle.fill")
+//                        .resizable()
+//                        .frame(width: 35, height: 35, alignment: .center)
+//                        .foregroundColor(.white.opacity(0.4))
+//                        .padding()
                 }
                 .frame(maxWidth: .infinity)
                 .background(Color.indigo)
+                .padding(.bottom, -15)
                 
                 TabView () {
                     DealsListView()
@@ -42,11 +44,11 @@ struct HomeView: View {
                             Text("Início")
                         }
                     
-                    GiftsListView()
-                        .tabItem {
-                            Image(systemName: "gift.fill")
-                            Text("É grátis!")
-                        }
+//                    GiftsListView()
+//                        .tabItem {
+//                            Image(systemName: "gift.fill")
+//                            Text("É grátis!")
+//                        }
                     
                     AboutView()
                         .tabItem {

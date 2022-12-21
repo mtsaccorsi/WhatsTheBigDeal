@@ -40,7 +40,7 @@ struct LogoView: View {
                     .fontWeight(.heavy)
                     .foregroundColor(Color.white.opacity(0.7))
             }
-            .padding(.leading)
+//            .padding(.leading)
             .scaledToFill()
     }
 }

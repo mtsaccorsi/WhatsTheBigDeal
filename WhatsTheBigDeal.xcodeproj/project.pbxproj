@@ -16,19 +16,18 @@
 		1A40E904284EE180002368DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A40E903284EE180002368DE /* Preview Assets.xcassets */; };
 		1A41D98628510856004DEC3E /* ListLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41D98528510856004DEC3E /* ListLoadingView.swift */; };
 		1A5158D3285F952700AA4430 /* Suggestions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A5158D2285F952700AA4430 /* Suggestions.rtf */; };
-		1A874873285FC59300D8BD26 /* DealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874872285FC59300D8BD26 /* DealsViewModel.swift */; };
+		1A874873285FC59300D8BD26 /* DealsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874872285FC59300D8BD26 /* DealsListViewModel.swift */; };
 		1A874875285FC5E400D8BD26 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874874285FC5E400D8BD26 /* SearchView.swift */; };
 		1A874877285FC7C100D8BD26 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A874876285FC7C100D8BD26 /* SearchViewModel.swift */; };
 		1A91C0DF292DB4B0004FAEA3 /* Poor_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91C0DE292DB4B0004FAEA3 /* Poor_PlayerUITests.swift */; };
 		1A91C0E1292DB4B0004FAEA3 /* Poor_PlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91C0E0292DB4B0004FAEA3 /* Poor_PlayerUITestsLaunchTests.swift */; };
-		1AA9D4B5289612A200258621 /* GiftsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9D4B4289612A200258621 /* GiftsListView.swift */; };
-		1AA9D4B7289612F600258621 /* GiftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9D4B6289612F600258621 /* GiftsViewModel.swift */; };
 		1AA9FD9D2856BD0B00213B7E /* SearchLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9FD9C2856BD0B00213B7E /* SearchLoadingView.swift */; };
 		1AAEE5D228556431001D4F95 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D128556431001D4F95 /* SearchModel.swift */; };
 		1AAEE5D428557745001D4F95 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEE5D328557745001D4F95 /* Credentials.swift */; };
 		1ABD39D528CD1DE700D2898D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD39D428CD1DE700D2898D /* AboutView.swift */; };
 		1ABD39DB28CD2CF700D2898D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD39DA28CD2CF700D2898D /* SearchBarView.swift */; };
 		1ABD39DD28CD646600D2898D /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD39DC28CD646600D2898D /* IconView.swift */; };
+		1AD8D2CC294F96DE00EBA530 /* DealsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8D2CB294F96DE00EBA530 /* DealsFilter.swift */; };
 		1ADA0F4E285FBE7F00EF3DEF /* DealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */; };
 		1AE4E80C28CC027E0059C666 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4E80B28CC027E0059C666 /* SplashScreenView.swift */; };
 		1AEDA0B928C04722000B33E0 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0B828C04722000B33E0 /* LogoView.swift */; };
@@ -55,20 +54,20 @@
 		1A40E903284EE180002368DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A41D98528510856004DEC3E /* ListLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoadingView.swift; sourceTree = "<group>"; };
 		1A5158D2285F952700AA4430 /* Suggestions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Suggestions.rtf; sourceTree = "<group>"; };
-		1A874872285FC59300D8BD26 /* DealsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsViewModel.swift; sourceTree = "<group>"; };
+		1A66E193294F908D00B1A1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A874872285FC59300D8BD26 /* DealsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsListViewModel.swift; sourceTree = "<group>"; };
 		1A874874285FC5E400D8BD26 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1A874876285FC7C100D8BD26 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1A91C0DC292DB4B0004FAEA3 /* Poor PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poor PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A91C0DE292DB4B0004FAEA3 /* Poor_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poor_PlayerUITests.swift; sourceTree = "<group>"; };
 		1A91C0E0292DB4B0004FAEA3 /* Poor_PlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poor_PlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1AA9D4B4289612A200258621 /* GiftsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsListView.swift; sourceTree = "<group>"; };
-		1AA9D4B6289612F600258621 /* GiftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsViewModel.swift; sourceTree = "<group>"; };
 		1AA9FD9C2856BD0B00213B7E /* SearchLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoadingView.swift; sourceTree = "<group>"; };
 		1AAEE5D128556431001D4F95 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		1AAEE5D328557745001D4F95 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		1ABD39D428CD1DE700D2898D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		1ABD39DA28CD2CF700D2898D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		1ABD39DC28CD646600D2898D /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		1AD8D2CB294F96DE00EBA530 /* DealsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsFilter.swift; sourceTree = "<group>"; };
 		1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsListView.swift; sourceTree = "<group>"; };
 		1AE4E80B28CC027E0059C666 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		1AEDA0B828C04722000B33E0 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		1A40E8FB284EE17F002368DE /* WhatsTheBigDeal */ = {
 			isa = PBXGroup;
 			children = (
+				1A66E193294F908D00B1A1F6 /* Info.plist */,
 				1AAEE5D628557800001D4F95 /* Screens */,
 				1AAEE5D5285577D6001D4F95 /* Shared */,
 				1A40E8FC284EE17F002368DE /* WhatsTheBigDealApp.swift */,
@@ -158,7 +158,6 @@
 				1ABD39DE28CD694E00D2898D /* About */,
 				1AEDA0B428C0249D000B33E0 /* Home */,
 				1AEDA0B528C024A8000B33E0 /* Deals */,
-				1AEDA0B628C024BC000B33E0 /* Gifts */,
 				1AEDA0B728C024EA000B33E0 /* Search */,
 			);
 			path = Screens;
@@ -184,31 +183,23 @@
 		1AEDA0B528C024A8000B33E0 /* Deals */ = {
 			isa = PBXGroup;
 			children = (
-				1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */,
-				1A11E867284FC51800C136BA /* DealsDetailView.swift */,
-				1A874872285FC59300D8BD26 /* DealsViewModel.swift */,
 				1A11E863284FA7D500C136BA /* DealsModel.swift */,
+				1ADA0F4D285FBE7F00EF3DEF /* DealsListView.swift */,
+				1A874872285FC59300D8BD26 /* DealsListViewModel.swift */,
+				1A11E867284FC51800C136BA /* DealsDetailView.swift */,
+				1AD8D2CB294F96DE00EBA530 /* DealsFilter.swift */,
 			);
 			path = Deals;
-			sourceTree = "<group>";
-		};
-		1AEDA0B628C024BC000B33E0 /* Gifts */ = {
-			isa = PBXGroup;
-			children = (
-				1AA9D4B4289612A200258621 /* GiftsListView.swift */,
-				1AA9D4B6289612F600258621 /* GiftsViewModel.swift */,
-			);
-			path = Gifts;
 			sourceTree = "<group>";
 		};
 		1AEDA0B728C024EA000B33E0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				1AAEE5D128556431001D4F95 /* SearchModel.swift */,
 				1A874874285FC5E400D8BD26 /* SearchView.swift */,
+				1A874876285FC7C100D8BD26 /* SearchViewModel.swift */,
 				1ABD39DA28CD2CF700D2898D /* SearchBarView.swift */,
 				1AA9FD9C2856BD0B00213B7E /* SearchLoadingView.swift */,
-				1A874876285FC7C100D8BD26 /* SearchViewModel.swift */,
-				1AAEE5D128556431001D4F95 /* SearchModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -321,8 +312,6 @@
 				1ABD39DB28CD2CF700D2898D /* SearchBarView.swift in Sources */,
 				1ABD39DD28CD646600D2898D /* IconView.swift in Sources */,
 				1A16787A2868D123008ECFDB /* Colors.swift in Sources */,
-				1AA9D4B7289612F600258621 /* GiftsViewModel.swift in Sources */,
-				1AA9D4B5289612A200258621 /* GiftsListView.swift in Sources */,
 				1A11E868284FC51800C136BA /* DealsDetailView.swift in Sources */,
 				1ABD39D528CD1DE700D2898D /* AboutView.swift in Sources */,
 				1AAEE5D428557745001D4F95 /* Credentials.swift in Sources */,
@@ -332,7 +321,8 @@
 				1A40E8FF284EE17F002368DE /* HomeView.swift in Sources */,
 				1A874877285FC7C100D8BD26 /* SearchViewModel.swift in Sources */,
 				1ADA0F4E285FBE7F00EF3DEF /* DealsListView.swift in Sources */,
-				1A874873285FC59300D8BD26 /* DealsViewModel.swift in Sources */,
+				1A874873285FC59300D8BD26 /* DealsListViewModel.swift in Sources */,
+				1AD8D2CC294F96DE00EBA530 /* DealsFilter.swift in Sources */,
 				1A874875285FC5E400D8BD26 /* SearchView.swift in Sources */,
 				1A41D98628510856004DEC3E /* ListLoadingView.swift in Sources */,
 				1A40E8FD284EE17F002368DE /* WhatsTheBigDealApp.swift in Sources */,
@@ -412,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -467,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -488,7 +478,7 @@
 				DEVELOPMENT_TEAM = T5XLB46SH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WhatsTheBigDeal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -517,7 +507,7 @@
 				DEVELOPMENT_TEAM = T5XLB46SH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WhatsTheBigDeal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

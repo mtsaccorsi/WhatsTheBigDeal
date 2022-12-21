@@ -15,7 +15,8 @@ struct Data: Codable {
     let list: [GameList]
 }
 
-struct GameList: Codable {
+struct GameList: Codable, Identifiable {
+    let id = UUID() // needed to be `let` for the api list to load
     let plain: String
     let title: String
     let price_new: Float
@@ -26,6 +27,7 @@ struct GameList: Codable {
 }
 
 struct Shop: Codable {
+    let id: String
     let name: String
 }
 
