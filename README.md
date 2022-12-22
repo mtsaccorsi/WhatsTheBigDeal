@@ -22,6 +22,9 @@ Projeto em **SwiftUI** para exibir as últimas promoções de jogos digitais par
 Ao clicar em <b>+ (mais)</b> o app redireciona para a página da loja para aquisição do jogo em questão.
 
 <br>
+* API utilizada: isThereAnyDeal
+
+<br>
 
 ## Execução
 
