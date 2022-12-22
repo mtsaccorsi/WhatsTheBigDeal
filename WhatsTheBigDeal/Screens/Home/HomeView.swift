@@ -15,12 +15,12 @@ struct HomeView: View {
         
         ZStack {
             
-//            SplashScreenView(isShowing: isLoading)
-//                .zIndex(1)
-//                .task {
-//                    try? await Task.sleep(nanoseconds: 3_000_000_000)
-//                    isLoading.toggle()
-//                }
+            SplashScreenView(isShowing: isLoading)
+                .zIndex(1)
+                .task {
+                    try? await Task.sleep(nanoseconds: 3_000_000_000)
+                    isLoading.toggle()
+                }
             
             VStack {
                 HStack {

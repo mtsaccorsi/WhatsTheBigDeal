@@ -81,9 +81,9 @@ struct DealsListView: View {
                         }
                     }
                 }
-                .task {
-                    dealsVM.fetchDeals()
-                }
+            }
+            .task {
+                dealsVM.fetchDeals()
             }
             .padding(.top, -7)
             .refreshable {
