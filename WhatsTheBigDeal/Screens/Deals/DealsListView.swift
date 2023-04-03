@@ -39,7 +39,8 @@ struct DealsListView: View {
             // MARK: - DEALS LIST
             ScrollView {
                 LazyVStack {
-                    if let results = dealsVM.games {
+                    let results = dealsVM.games
+                    if results != nil {
                         
                         ForEach(results, id: \.id) { deal in
                             DealsDetailView(games: deal)
@@ -72,8 +73,7 @@ struct DealsListView: View {
                                 return Color.clear
                             }
                         }
-                    }
-                    else {
+                    }else {
                         HStack {
                             Spacer()
                             ListLoadingView(isShowing: dealsVM.isLoading)
