@@ -35,5 +35,5 @@ Necessário clonar o link do projeto no **Xcode**.
 
 ## Compatibilidade
 
-iOS 16 e superior.
+iOS 16+.
 
